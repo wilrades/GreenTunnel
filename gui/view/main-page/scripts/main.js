@@ -1,11 +1,12 @@
+#iniuntukpackaging 
+    
 const { ipcRenderer } = require('electron');
-
 $( document ).ready(function() {
 
     $('#close-button').on('click', () => {
         ipcRenderer.send('close-button')
     });
-
+   
     $('#on-off-button').on('click', () => {
         ipcRenderer.send('on-off-button')
     });
@@ -27,5 +28,3 @@ $( document ).ready(function() {
     })
 
 });
-
-
